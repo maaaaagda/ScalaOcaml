@@ -1,0 +1,27 @@
+
+
+zad 4
+val a =List (-2, -1, 0, 1, 2)
+val List (_, _, x, _, _) = a
+
+val b = List((1,2),(0,1))
+val List((_,_),(x,_)) = b
+
+
+zad 3
+
+def root3(a:Double, e:Double):Double = 
+  a>1 match
+    {
+    case (true) => rootPom(a, a/3, e)
+    case (false) =>rootPom(a, a, e)
+    }
+ 
+ 	
+	def root3Pom(a:Double, x:Double, e:Double):Double=
+	  ((Math.pow(x,3)-a).abs<=e*(a).abs) match
+	  {
+	  case (true) =>x
+	  case (false) => rootPom (a, (x+(a/(x*x)-x)/3), e)
+	  }
+root3(1000, Math.pow(10, -15))

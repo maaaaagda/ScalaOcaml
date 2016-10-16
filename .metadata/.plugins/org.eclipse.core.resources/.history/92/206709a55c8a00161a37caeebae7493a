@@ -1,0 +1,14 @@
+val list1 = 1::2::3::Nil
+val list2 = 4::5::Nil
+val list3 = 6::7::8::Nil
+def silnia(n:Int):Int =
+ if (n==0) 1 else n*silnia(n-1)
+val newList = Nil
+
+def flatten( n:List) :List = 
+  n.length 
+ 
+  //while(l>0)
+  // +(elem: A): List[A]
+    println(n._n.length)
+       // l=l-1
