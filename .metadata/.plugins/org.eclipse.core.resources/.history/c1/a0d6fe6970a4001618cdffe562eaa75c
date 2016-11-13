@@ -1,0 +1,35 @@
+let f x y = y (x y);
+
+let f2 x y = function z -> x::y;;
+let f2 x y = function z -> (x::y);;
+let f2 x y = (function z -> x)::y;;
+let f2 x y = function k ->(function z -> x::y);; (y)
+
+let f2 x y z = z x::y;; === let f2 x y z = (z x)::y;; tak ida nawiaski
+
+let f2 x y z = z (x::y);;
+let f3 x  = function c ->x;;
+let rec f4 x =f4 x;
+let  f5 x =f5 x;
+
+zad 2
+let rec g x = g x;
+let rec g1 x = x;
+function x->x;;
+
+
+
+
+type 'param para_i_x = int * 'param;;
+type para_i_f = float para_i_x;;
+let (x:para_i_f) = (3,3.14);;
+let (x) = (3,3.14);;
+
+type kolor = Trefl | Karo | Kier | Pik;;
+type karta = Cos of kolor*int | Walet of kolor
+| Dama of kolor | Krol of kolor | As of kolor;;
+let x2 = Krol Trefl;;
+let (x3:karta) = Cos (Karo, 6) ;;
+
+
+

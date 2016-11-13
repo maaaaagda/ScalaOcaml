@@ -3,9 +3,17 @@ def flatten[A](xs:List[List[A]]):List[A] =
   if (xs == Nil) Nil
   else xs.head++flatten(xs.tail)
 Zad 2
-def count[A](m:List[A]):Int = 
+def count[A](x:A,m:List[A]):Int = 
   if (m == Nil) 0
-  else 1+(count(m.tail))
+  else if (x==m.head) 1+(count(x, m.tail))
+  else (count(x, m.tail))
+
+  count(1, List(1,2,1))
+  
+  def count[A](m:(A,List[A])):Int = 
+if (m._2 == Nil) 0 
+else if (m._1 == m._2.head) 1 + count ( m._1,m._2.tail) 
+else 0 + count ( m._1,m._2.tail)
 
 Zad 3
 def replicate [A](k:(A,Int)):List[A]=

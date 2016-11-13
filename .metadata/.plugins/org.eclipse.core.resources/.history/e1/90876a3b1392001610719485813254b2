@@ -1,9 +1,0 @@
-(function x -> x+x) 6;; 
-
-let nth = (-2, -1, 0, 1, 2);;
-let (a, b, c, d, f) = nth;;
-let (-2, -1, x, 1, 2) = nth;
-
-let nt =  [(1,2);(0,1)];;
-let [(a,b);(c,d)] = nt;;
-let[(1,2);(x,1)] = nt;; 
