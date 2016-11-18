@@ -1,8 +1,0 @@
-//aliasy
-type ParaIX[Param] = (Int,Param)
-
-type ParaIF = ParaIX[Float]
-
-//val x = (3, 3.14f)
-
-val x:ParaIF = (3, 3.14f)

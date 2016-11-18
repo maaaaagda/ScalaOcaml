@@ -2724,3 +2724,129 @@ when weaving
 2016-11-12 18:59:50,795  WARN [Worker-45] - ScalaProject - Project Lista_1 runs on platform default installation.
 2016-11-12 19:25:14,669  WARN [Worker-44] - ScalaProject - Project Lista_1 has platform default sourceLevel.
 2016-11-12 19:25:14,669  WARN [Worker-44] - ScalaProject - Project Lista_1 runs on platform default installation.
+2016-11-17 15:36:31,694 ERROR [main] - System.err - [org.eclipse.debug.core] error can't determine modifiers of missing type org.eclipse.pde.internal.ui.wizards.imports.PluginImportHelper
+when weaving type org.eclipse.debug.core.ILaunchListener
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+2016-11-17 15:36:33,245  WARN [main] - ScalaProject - Project Lista_1 has platform default sourceLevel.
+2016-11-17 15:36:33,246  WARN [main] - ScalaProject - Project Lista_1 runs on platform default installation.
+2016-11-17 15:36:33,261  WARN [main] - ScalaProject - Project Lista_1 has platform default sourceLevel.
+2016-11-17 15:36:33,261  WARN [main] - ScalaProject - Project Lista_1 runs on platform default installation.
+2016-11-17 15:36:33,306 ERROR [main] - System.err - [org.eclipse.jdt.launching] error can't determine modifiers of missing type org.eclipse.pde.internal.ui.wizards.imports.PluginImportHelper
+when weaving type org.eclipse.jdt.internal.launching.JREContainerInitializer
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+2016-11-17 15:36:39,633  WARN [main] - ScalaProject - Project Lab_0 has platform default sourceLevel.
+2016-11-17 15:36:39,633  WARN [main] - ScalaProject - Project Lab_0 runs on platform default installation.
+2016-11-17 15:36:39,637  WARN [main] - ScalaProject - Project Lab_1 has platform default sourceLevel.
+2016-11-17 15:36:39,637  WARN [main] - ScalaProject - Project Lab_1 runs on platform default installation.
+2016-11-17 15:37:10,598  WARN [Worker-2] - ScalaProject - Project Lista_1 has platform default sourceLevel.
+2016-11-17 15:37:10,600  WARN [Worker-2] - ScalaProject - Project Lista_1 runs on platform default installation.
+2016-11-17 15:37:10,764  WARN [Worker-2] - ScalaProject - Project Lista_1 has platform default sourceLevel.
+2016-11-17 15:37:10,764  WARN [Worker-2] - ScalaProject - Project Lista_1 runs on platform default installation.
+2016-11-17 15:37:24,036  WARN [Worker-0] - ScalaProject - Project Lista_1 has platform default sourceLevel.
+2016-11-17 15:37:24,036  WARN [Worker-0] - ScalaProject - Project Lista_1 runs on platform default installation.
+2016-11-17 16:05:31,965  WARN [Worker-44] - ScalaProject - Project Lista_1 has platform default sourceLevel.
+2016-11-17 16:05:31,966  WARN [Worker-44] - ScalaProject - Project Lista_1 runs on platform default installation.
+2016-11-17 16:57:31,392  WARN [Worker-102] - ScalaProject - Project Lista_1 has platform default sourceLevel.
+2016-11-17 16:57:31,395  WARN [Worker-102] - ScalaProject - Project Lista_1 runs on platform default installation.
+2016-11-17 20:46:51,308  WARN [Worker-113] - ScalaProject - Project Lab_1 has platform default sourceLevel.
+2016-11-17 20:46:51,309  WARN [Worker-113] - ScalaProject - Project Lab_1 runs on platform default installation.
+2016-11-17 20:46:51,318  WARN [Worker-113] - ScalaProject - Project Lab_1 has platform default sourceLevel.
+2016-11-17 20:46:51,319  WARN [Worker-113] - ScalaProject - Project Lab_1 runs on platform default installation.
+2016-11-17 20:49:17,174  WARN [Worker-118] - ScalaProject - Project Lista_1 has platform default sourceLevel.
+2016-11-17 20:49:17,175  WARN [Worker-118] - ScalaProject - Project Lista_1 runs on platform default installation.
+2016-11-17 22:24:05,196  WARN [Worker-2] - ScalaProject - Project Lista_1 has platform default sourceLevel.
+2016-11-17 22:24:05,196  WARN [Worker-6] - ScalaProject - Project Lista_1 has platform default sourceLevel.
+2016-11-17 22:24:05,213  WARN [Worker-2] - ScalaProject - Project Lista_1 runs on platform default installation.
+2016-11-17 22:24:05,213  WARN [Worker-6] - ScalaProject - Project Lista_1 runs on platform default installation.
+2016-11-17 22:24:05,228  WARN [Worker-2] - ScalaProject - Project Lab_0 has platform default sourceLevel.
+2016-11-17 22:24:05,228  WARN [Worker-6] - ScalaProject - Project Lab_0 has platform default sourceLevel.
+2016-11-17 22:24:05,228  WARN [Worker-2] - ScalaProject - Project Lab_0 runs on platform default installation.
+2016-11-17 22:24:05,228  WARN [Worker-6] - ScalaProject - Project Lab_0 runs on platform default installation.
+2016-11-17 22:24:05,229  WARN [Worker-2] - ScalaProject - Project Lab_1 has platform default sourceLevel.
+2016-11-17 22:24:05,229  WARN [Worker-6] - ScalaProject - Project Lab_1 has platform default sourceLevel.
+2016-11-17 22:24:05,229  WARN [Worker-2] - ScalaProject - Project Lab_1 runs on platform default installation.
+2016-11-17 22:24:05,229  WARN [Worker-6] - ScalaProject - Project Lab_1 runs on platform default installation.
+2016-11-17 22:24:07,149  WARN [Worker-8] - ScalaProject - Project Lab_0 has platform default sourceLevel.
+2016-11-17 22:24:07,150  WARN [Worker-8] - ScalaProject - Project Lab_0 runs on platform default installation.
+2016-11-17 22:24:07,348  WARN [Worker-8] - ScalaProject - Project Lab_0 has platform default sourceLevel.
+2016-11-17 22:24:07,348  WARN [Worker-8] - ScalaProject - Project Lab_0 runs on platform default installation.
+2016-11-17 22:24:07,811  WARN [Worker-8] - ScalaProject - Project Lab_1 has platform default sourceLevel.
+2016-11-17 22:24:07,811  WARN [Worker-8] - ScalaProject - Project Lab_1 runs on platform default installation.
+2016-11-17 22:24:07,819  WARN [Worker-8] - ScalaProject - Project Lab_1 has platform default sourceLevel.
+2016-11-17 22:24:07,819  WARN [Worker-8] - ScalaProject - Project Lab_1 runs on platform default installation.
+2016-11-17 22:24:07,861  WARN [Worker-8] - ScalaProject - Project Lista_1 has platform default sourceLevel.
+2016-11-17 22:24:07,861  WARN [Worker-8] - ScalaProject - Project Lista_1 runs on platform default installation.
+2016-11-17 22:24:07,872  WARN [Worker-8] - ScalaProject - Project Lista_1 has platform default sourceLevel.
+2016-11-17 22:24:07,872  WARN [Worker-8] - ScalaProject - Project Lista_1 runs on platform default installation.
+2016-11-17 23:35:56,357  WARN [main] - ScalaProject - Project Lista_1 has platform default sourceLevel.
+2016-11-17 23:35:56,358  WARN [main] - ScalaProject - Project Lista_1 runs on platform default installation.
+2016-11-17 23:59:44,140  WARN [Worker-102] - ScalaProject - Project Lista_1 has platform default sourceLevel.
+2016-11-17 23:59:44,140  WARN [Worker-102] - ScalaProject - Project Lista_1 runs on platform default installation.
+2016-11-18 00:03:48,194  WARN [Worker-103] - ScalaProject - Project Lista_1 has platform default sourceLevel.
+2016-11-18 00:03:48,195  WARN [Worker-103] - ScalaProject - Project Lista_1 runs on platform default installation.
+2016-11-18 00:11:27,345 ERROR [main] - System.err - [org.eclipse.jdt.debug.ui] error can't determine modifiers of missing type org.eclipse.pde.internal.ui.wizards.imports.PluginImportHelper
+when weaving type org.eclipse.jdt.internal.debug.ui.actions.ToggleBreakpointAdapter
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+2016-11-18 00:11:27,612 ERROR [main] - System.err - [org.eclipse.jdt.debug] error can't determine modifiers of missing type org.eclipse.pde.internal.ui.wizards.imports.PluginImportHelper
+when weaving type org.eclipse.jdt.debug.core.IJavaHotCodeReplaceListener
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+2016-11-18 00:19:08,846  WARN [Worker-117] - ScalaProject - Project Lista_1 has platform default sourceLevel.
+2016-11-18 00:19:08,847  WARN [Worker-117] - ScalaProject - Project Lista_1 runs on platform default installation.
+2016-11-18 11:25:11,065 ERROR [main] - System.err - [org.eclipse.debug.core] error can't determine modifiers of missing type org.eclipse.pde.internal.ui.wizards.imports.PluginImportHelper
+when weaving type org.eclipse.debug.core.ILaunchListener
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+2016-11-18 11:25:12,679  WARN [main] - ScalaProject - Project Lista_1 has platform default sourceLevel.
+2016-11-18 11:25:12,679  WARN [main] - ScalaProject - Project Lista_1 runs on platform default installation.
+2016-11-18 11:25:12,694  WARN [main] - ScalaProject - Project Lista_1 has platform default sourceLevel.
+2016-11-18 11:25:12,694  WARN [main] - ScalaProject - Project Lista_1 runs on platform default installation.
+2016-11-18 11:25:12,741 ERROR [main] - System.err - [org.eclipse.jdt.launching] error can't determine modifiers of missing type org.eclipse.pde.internal.ui.wizards.imports.PluginImportHelper
+when weaving type org.eclipse.jdt.internal.launching.JREContainerInitializer
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+2016-11-18 11:25:18,869  WARN [main] - ScalaProject - Project Lab_0 has platform default sourceLevel.
+2016-11-18 11:25:18,871  WARN [main] - ScalaProject - Project Lab_0 runs on platform default installation.
+2016-11-18 11:25:18,878  WARN [main] - ScalaProject - Project Lab_1 has platform default sourceLevel.
+2016-11-18 11:25:18,878  WARN [main] - ScalaProject - Project Lab_1 runs on platform default installation.
+2016-11-18 11:28:50,124 ERROR [main] - System.err - [org.eclipse.jdt.debug.ui] error can't determine modifiers of missing type org.eclipse.pde.internal.ui.wizards.imports.PluginImportHelper
+when weaving type org.eclipse.jdt.internal.debug.ui.actions.ToggleBreakpointAdapter
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+2016-11-18 11:28:50,301 ERROR [main] - System.err - [org.eclipse.jdt.debug] error can't determine modifiers of missing type org.eclipse.pde.internal.ui.wizards.imports.PluginImportHelper
+when weaving type org.eclipse.jdt.debug.core.IJavaHotCodeReplaceListener
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+2016-11-18 11:28:59,687  WARN [Worker-11] - ScalaProject - Project Lista_1 has platform default sourceLevel.
+2016-11-18 11:28:59,687  WARN [Worker-11] - ScalaProject - Project Lista_1 runs on platform default installation.
+2016-11-18 11:28:59,792  WARN [Worker-11] - ScalaProject - Project Lista_1 has platform default sourceLevel.
+2016-11-18 11:28:59,792  WARN [Worker-11] - ScalaProject - Project Lista_1 runs on platform default installation.
+2016-11-18 11:29:31,530  WARN [Worker-11] - ScalaProject - Project Lista_1 has platform default sourceLevel.
+2016-11-18 11:29:31,530  WARN [Worker-11] - ScalaProject - Project Lista_1 runs on platform default installation.
+2016-11-18 12:13:27,697  WARN [Worker-60] - ScalaProject - Project Lista_1 has platform default sourceLevel.
+2016-11-18 12:13:27,906  WARN [Worker-60] - ScalaProject - Project Lista_1 runs on platform default installation.
+2016-11-18 12:17:29,706  WARN [Worker-66] - ScalaProject - Project Lista_1 has platform default sourceLevel.
+2016-11-18 12:17:29,775  WARN [Worker-66] - ScalaProject - Project Lista_1 runs on platform default installation.
+2016-11-18 12:51:55,684  WARN [Worker-5] - ScalaProject - Project Lista_1 has platform default sourceLevel.
+2016-11-18 12:51:55,684  WARN [Worker-2] - ScalaProject - Project Lista_1 has platform default sourceLevel.
+2016-11-18 12:51:55,747  WARN [Worker-2] - ScalaProject - Project Lista_1 runs on platform default installation.
+2016-11-18 12:51:55,747  WARN [Worker-5] - ScalaProject - Project Lista_1 runs on platform default installation.
+2016-11-18 12:51:55,849  WARN [Worker-5] - ScalaProject - Project Lab_0 has platform default sourceLevel.
+2016-11-18 12:51:55,849  WARN [Worker-5] - ScalaProject - Project Lab_0 runs on platform default installation.
+2016-11-18 12:51:55,850  WARN [Worker-5] - ScalaProject - Project Lab_1 has platform default sourceLevel.
+2016-11-18 12:51:55,851  WARN [Worker-5] - ScalaProject - Project Lab_1 runs on platform default installation.
+2016-11-18 12:51:55,861  WARN [Worker-2] - ScalaProject - Project Lab_0 has platform default sourceLevel.
+2016-11-18 12:51:55,861  WARN [Worker-2] - ScalaProject - Project Lab_0 runs on platform default installation.
+2016-11-18 12:51:55,862  WARN [Worker-2] - ScalaProject - Project Lab_1 has platform default sourceLevel.
+2016-11-18 12:51:55,862  WARN [Worker-2] - ScalaProject - Project Lab_1 runs on platform default installation.
