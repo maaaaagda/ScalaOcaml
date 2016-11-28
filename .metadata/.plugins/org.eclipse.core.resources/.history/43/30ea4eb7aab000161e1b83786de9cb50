@@ -1,0 +1,26 @@
+let filter p =
+let rec find acc = function
+[] -> List.rev acc
+| x :: xs -> if p x then find (x :: acc) xs else find acc xs
+in
+find [];;
+
+let sumMod l n =
+  List.fold_left (fun acc x -> acc + x mod n ) 0 l;;
+
+sumMod [2;3;7;0;10;-3] 5;;
+
+let podz l =
+	let rec cos pus t =
+		match pus, t with
+	|t, []-> [[]::t::[]]
+	|h::t -> if (List.filter(fun h -> h<= List.hd (t))) then [h::cos(t)]
+						else [[h]::cos(t)::[]]
+					in cos [] l;;	
+		
+let breadthSearch (Graph succ) startNode =
+let rec search visited = function
+[] -> []
+| h::t -> if List.mem h visited then search visited t
+else h::search (h::visited) (t @ succ h)
+in search [] [startNode];;		

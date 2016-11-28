@@ -1,9 +1,37 @@
+//zadanie 1
 let f1 x = x 1 1;;
 let f1 = function x -> x 1 1;;
+val f1 : (int -> int -> 'a) -> 'a = <fun>
 
+//zadanie 3
+let sumProd  = 
+	List.fold_left(fun (a, b ) y ->(a+y, b*y)) (0, 1) ;;
 
- let f2 x y z = x ( y ^ z );;
+sumProd [2;2;4];;
+
+//zadanie 4
+let rec quicksort = function
+[] -> []
+| [x] -> [x]
+| xs -> let small = List.filter (fun y -> y < (List.hd xs) ) (xs)
+and large = List.filter (fun y -> y >= (List.hd xs) )(List.tl xs)  
+in quicksort small @ (List.hd xs::quicksort large);;
+
+quicksort [5;3;3;4;6;7;3;8];;
+(* zapêtla³a siê program bo zawsze w large pojawi siê piwot, wiec trzeba go do³¹czyc *)
+
+let rec quicksort' = function
+[] -> []
+| x::xs -> let small = List.filter (fun y -> y < x ) xs
+and large = List.filter (fun y -> y >= x ) xs
+in quicksort' small @ (x :: quicksort' large);;
+
+quicksort' [5;4;6;7;4;3;8;];;
+(* brakowalo = w linice z large wiec ucinane byly liczby rowne piwotom *)
+let f2 x y z = x ( y ^ z );;
 let f2 = function x -> function y-> function z -> x(y^z);;
+val f2 : (string -> 'a) -> string -> string -> 'a = <fun>
+
 let f z y x = x( y z);;
 let f z y x = x y z;;
 let f x y z = z x x (y x);;
@@ -11,6 +39,16 @@ let f a b c = c a::b;;
 let f x y z = z x (y x);;
 let f x y z = x z (y x);;
 let f x z y q= x z (y q);;
+
+2
+let dodaj= function a -> function b -> a+b;;
+
+dodaj 5 10;;
+let dodaj5 a =
+	dodaj 5 a;;
+
+let x = dodaj5 10;;
+	5
 
 let xs = [2;3;4];;
 let m = xs
@@ -166,5 +204,30 @@ quicksort' [5;4;6;7;4;3;8;];;
 
 
 
+let xs = [5;6;6;3;23;1;10];;
+
+let rec insertionSort kryt list=
+	let rec insert elem sorted =
+		match elem, sorted with
+		| _,[]->[elem]
+		|_,h::t-> if (kryt elem h) then elem::h::t
+							else h::(insert elem t)
+	in match list with
+	| []->[]
+	| h::t->insert h (insertionSort kryt t);;	(*in insert nbnnb result*)
+	
+let x= insertionSort (<) xs;;	
+
+let xss = [5;6;2;3;100];;
+let rec insertionSort1 kryt list=
+	let rec insert1 listt sorted =
+		match listt, sorted with
+		|[],_->sorted
+		|h::t, [] -> (insert1 t [h])
+		|h::t, h1::t1-> if (kryt h h1) then (insert1 t (h::sorted))
+							else (h1::(insert1 listt t1))
+	in insert1 list [];;
+
+let x= insertionSort1 (>) xss;;	
 
 

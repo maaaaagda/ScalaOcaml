@@ -1,0 +1,54 @@
+
+let xs = [50;20;10;5;2;1];;
+
+let rec wydajReszte n l=
+	match n, l with
+	| 0, _ -> []
+	| _, h::t -> if (n >= h) then h::(wydajReszte(n-h) (l))
+							 else wydajReszte (n) (t);;	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let filter p =
+let rec find acc = function
+[] -> List.rev acc
+| x :: xs -> if p x then find (x :: acc) xs else find acc xs
+in
+find [];;
+
+let sumMod l n =
+  List.fold_left (fun acc x -> acc + x mod n ) 0 l;;
+
+sumMod [2;3;7;0;10;-3] 5;;
+
+let podz l =
+	let rec cos pus k =
+		match pus, k with
+	|k, []-> [[];k]
+	|k::j, h::t -> if (k<= List.hd (t)) then [cos t (h::pus)]
+						else [pus;cos(t)]
+	|_ ->[pus; k]					
+					in cos [] l;;	
+		
+let breadthSearch (Graph succ) startNode =
+let rec search visited = function
+[] -> []
+| h::t -> if List.mem h visited then search visited t
+else h::search (h::visited) (t @ succ h)
+in search [] [startNode];;		

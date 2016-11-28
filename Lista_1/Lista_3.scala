@@ -1,3 +1,9 @@
+//zadanie 3
+def sumProd(xs:List[Int]) =
+  xs.foldLeft (0, 1) { case ((a, b), x)=>(a+x, b*x) }
+  
+sumProd(List(2,2,2))
+
 def sumProd(xs:List[Int]):(Int,Int) =
   xs match {
   case h::t => {val (s,p)=sumProd(t)
@@ -5,11 +11,11 @@ def sumProd(xs:List[Int]):(Int,Int) =
   }
   case Nil => (0,1)
 }
-
-def sumProd1(xs:List[Int]) =
-  (xs.foldLeft (0, 1)) { case ((a, b), x)=>(a+x, b*x) }
+//zadanie 3
+def sumProd(xs:List[Int]) =
+  xs.foldLeft (0, 1) ( (acc, x)=>(acc._1+x, acc._2*x) ) 
   
-sumProd1(List(2,2,2))
+sumProd(List(2,2,2))
 
 def suum(xs:List[Int]) =
   xs.foldLeft(0)((x, y) => x+y)

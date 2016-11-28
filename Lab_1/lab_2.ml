@@ -14,15 +14,26 @@ nTy([2;4],1);;
 let rec podzielPoN(lista, dlugosc) = 
 	match (lista, dlugosc) with
 	| [], _ -> failwith "error"
-	| hd::tl,1 ->let (l1) = podzielPoN (tl,dlugosc)  in ([hd], [tl]);;
-	
+	| hd::tl,1 ->let (l1) = podzielPoN (tl,dlugosc)  in ([hd], [tl])
 	| hd::tl, _-> podzielPoN (lista,dlugosc-1);;
 
-podzielPoN([2;3;5;6;7], 3);;
+podzielPoN([2;3;5;6;7], 2);;
 
 
+let split list  =
+    let rec aux acc = function
+      | [] -> List.rev acc, []
+      | h :: t as l -> if (acc <>[]&&List.hd (acc)>=h )then List.rev acc, l
+                      else aux (h :: acc) t  
+		in    aux [] list;;
 
-
+split [1;2;3;2;7;8;2;4;5];;
+let split list n =
+    let rec aux i acc = function
+      | [] -> List.rev acc, []
+      | h :: t as l -> if i = 0 then List.rev acc, l
+                       else aux (i-1) (h :: acc) t  in
+    aux n [] list;;
 
 
 

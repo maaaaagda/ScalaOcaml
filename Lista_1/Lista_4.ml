@@ -232,13 +232,16 @@ type 'a bt = Empty | Node of 'a * 'a bt * 'a bt;;
 let tt = Node(1,Node(2,Node(4,Empty,Empty),Empty),Node(3,Node(5,Empty,Node(6,Empty,Empty)),Empty));;
 
 let sciezkaWewnetrznaa bt =
+	if bt==Empty then failwith "Empty!"
+	else
 	let rec zlicz(t, x) =
 		match t with
 		| Empty ->0
 		| Node(_,l,p)-> x+zlicz(l,x+1)+zlicz(p,x+1)
 in zlicz(bt,0);;	
 	
-	sciezkaWewnetrznaa tt;;	
+sciezkaWewnetrznaa tt;;	
+
 let sciezkaZewnetrznaa bt =
 	let rec zlicz(t, x) =
 		match t with
@@ -251,7 +254,7 @@ type 'a graph = Graph of ('a -> 'a list);;
 
 let depthSearch (Graph succ) startNode = 
 	let rec search visited = function
-	[] -> []
+	|[] -> []
 	| h::t -> if List.mem h visited then search visited t
 						else h::search (h::visited) (( succ h )@t)
 	in search [] [startNode];;
@@ -265,4 +268,9 @@ let g = Graph
 | 4 -> [0;2]
 | n -> failwith ("Graph g: node "^string_of_int n^" doesn't exist")
 );;
-depthSearcha g 4;;
+depthSearch g 1;;
+
+
+
+
+
